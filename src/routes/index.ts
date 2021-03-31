@@ -7,7 +7,7 @@ import {
   usersConfig
 } from './configs';
 
-export function createApi() {
+export function createApi(): Api {
   const api = new Api();
   api.routes.add('home', '/', homeConfig);
   api.routes.add('ping', '/ping', pingConfig);
